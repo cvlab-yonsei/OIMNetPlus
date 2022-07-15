@@ -1,0 +1,9 @@
+OUTPUT_DIR: "./exps/ssm_oimp"
+INPUT:
+  DATA_ROOT: "/workspace/dataset/CUHK-SYSU"
+MODEL:
+  LOSS:
+    TYPE: 'LOIM'
+    OIM_EPS: 0.1
+  ROI_HEAD:
+    NORM_TYPE: 'protonorm'

@@ -1,0 +1,12 @@
+OUTPUT_DIR: "./exps/prw_oimp"
+INPUT:
+  DATASET: "PRW"
+  DATA_ROOT: "/workspace/dataset/PRW-v16.04.20"
+MODEL:
+  LOSS:
+    TYPE: 'LOIM'
+    OIM_EPS: 0.1
+    LUT_SIZE: 482
+    CQ_SIZE: 500
+  ROI_HEAD:
+    NORM_TYPE: 'protonorm'
