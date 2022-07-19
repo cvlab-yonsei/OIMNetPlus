@@ -16,7 +16,7 @@ For more details, visit our [project site](https://cvlab.yonsei.ac.kr/projects/O
 First, clone our git repository.
 
 ### Docker
-We highly recommend using our [Dockerfile](https://github.com/cvlab-yonsei/OIMNetPlus/Dockerfile) to set up the environment.
+We highly recommend using our [Dockerfile](https://github.com/cvlab-yonsei/OIMNetPlus/blob/main/Dockerfile) to set up the environment.
 ```
 # build docker image
 $ docker build -t oimnetplus:latest . 
