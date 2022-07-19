@@ -29,8 +29,8 @@ $ docker run --ipc=host -it -v <working_dir>:/workspace/work -v <dataset_dir>:/w
 Download [PRW](https://github.com/liangzheng06/PRW-baseline) and [CUHK-SYSU](https://github.com/ShuangLI59/person_search) datasets.<br>
 Modify the dataset directories below if necessary.
 
-* PRW: L4 of [configs/prw.yaml](https://github.com/cvlab-yonsei/OIMNetPlus/configs/prw.yaml)<br>
-* CUHK-SYSU: L3 of [configs/ssm.yaml](https://github.com/cvlab-yonsei/OIMNetPlus/configs/prw.yaml)<br>
+* PRW: L4 of [configs/prw.yaml](https://github.com/cvlab-yonsei/OIMNetPlus/blob/main/configs/prw.yaml)<br>
+* CUHK-SYSU: L3 of [configs/ssm.yaml](https://github.com/cvlab-yonsei/OIMNetPlus/blob/main/configs/ssm.yaml)<br>
 
 Your directories should look like:
 ```
@@ -60,16 +60,16 @@ Your directories should look like:
 
 ## Training and Evaluation
 * OIMNet++ 
-    > `$ python train.py --cfg configs/prw.yaml`<br>
-    > `$ python train.py --cfg configs/ssm.yaml` 
+    `$ python train.py --cfg configs/prw.yaml`<br>
+    `$ python train.py --cfg configs/ssm.yaml` 
 
 * OIMNet+++
-    > `$ python train.py --cfg configs/prw.yaml MODEL.ROI_HEAD.AUGMENT True`<br>
-    > `$ python train.py --cfg configs/ssm.yaml MODEL.ROI_HEAD.AUGMENT True`
+    `$ python train.py --cfg configs/prw.yaml MODEL.ROI_HEAD.AUGMENT True`<br>
+    `$ python train.py --cfg configs/ssm.yaml MODEL.ROI_HEAD.AUGMENT True`
 
 * OIMNet
-    > `$ python train.py --cfg configs/prw.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM'`<br> 
-    > `$ python train.py --cfg configs/ssm.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM'` 
+    `$ python train.py --cfg configs/prw.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM'`<br> 
+    `$ python train.py --cfg configs/ssm.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM'` 
 
 By running the commands, evaluation results and training losses will be logged into a .txt file in the output directory.
 
