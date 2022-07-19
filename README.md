@@ -59,15 +59,15 @@ Your directories should look like:
 ```
 
 ## Training and Evaluation
-* OIMNet++ 
+* OIMNet++<br> 
     `$ python train.py --cfg configs/prw.yaml`<br>
     `$ python train.py --cfg configs/ssm.yaml` 
 
-* OIMNet+++
+* OIMNet+++<br>
     `$ python train.py --cfg configs/prw.yaml MODEL.ROI_HEAD.AUGMENT True`<br>
     `$ python train.py --cfg configs/ssm.yaml MODEL.ROI_HEAD.AUGMENT True`
 
-* OIMNet
+* OIMNet<br>
     `$ python train.py --cfg configs/prw.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM'`<br> 
     `$ python train.py --cfg configs/ssm.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM'` 
 
