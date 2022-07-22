@@ -1,7 +1,7 @@
 # PyTorch Implementation of OIMNet++ (ECCV 2022)
 This is an official PyTorch implementation of "OIMNet++: Prototypical Normalization and Localization-aware Learning for Person Search", ECCV 2022.
 
-For more details, visit our [project site](https://cvlab.yonsei.ac.kr/projects/OIMNetPlus/) or see our [paper]().
+For more details, visit our [project site](https://cvlab.yonsei.ac.kr/projects/OIMNetPlus/) or see our [paper](http://arxiv.org/abs/2207.10320).
 
 ## Requirements
 * Python 3.8
