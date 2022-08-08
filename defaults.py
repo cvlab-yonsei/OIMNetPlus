@@ -107,7 +107,7 @@ _C.MODEL.ROI_HEAD.NMS_THRESH_TEST = 0.4
 # Maximum number of detected objects
 _C.MODEL.ROI_HEAD.DETECTIONS_PER_IMAGE_TEST = 300
 # ProtoNorm within ResNet50 backbone
-_C.MODEL.ROI_HEAD.AUGMENT = True 
+_C.MODEL.ROI_HEAD.AUGMENT = False 
 
 
 # -------------------------------------------------------- #
