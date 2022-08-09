@@ -73,6 +73,16 @@ Your directories should look like:
 
 By running the commands, evaluation results and training losses will be logged into a .txt file in the output directory.
 
+## Pretrained Models
+
+We provide pretrained weights and the correponding configs below.<br>
+
+|           |   OIMNet++   |   OIMNet+++  |
+|-----------|:------------:|:------------:|
+| PRW       | [model](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/prw-loimeps0.1-normtypeprotonorm-augmentfalse.pth) <br> [config](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/prw-loimeps0.1-normtypeprotonorm-augmentfalse.yaml) | [model](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/prw-loimeps0.1-normtypeprotonorm-augmenttrue.pth) <br> [config](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/prw-loimeps0.1-normtypeprotonorm-augmenttrue.yaml) |
+| CUHK-SYSU | [model](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/ssm-loimeps0.1-normtypeprotonorm-augmentfalse.pth) <br> [config](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/ssm-loimeps0.1-normtypeprotonorm-augmentfalse.yaml) | [model](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/ssm-loimeps0.1-normtypeprotonorm-augmenttrue.pth) <br> [config](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/ssm-loimeps0.1-normtypeprotonorm-augmenttrue.yaml) |
+
+
 <!-- ## Bibtex
 ```
 @
