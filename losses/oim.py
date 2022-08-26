@@ -124,6 +124,7 @@ class LOIMLoss(nn.Module):
 
         inds = label >= 0
         label = label[inds]
+        ious = ious[inds]
         inputs = inputs[inds.unsqueeze(1).expand_as(inputs)].view(-1, self.num_features)
 
         projected = loim(inputs, label, self.lut, self.cq, self.header_cq, momentum=self.momentum, ious=ious, eps=self.oim_eps)

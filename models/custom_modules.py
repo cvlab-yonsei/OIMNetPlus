@@ -8,9 +8,11 @@ class _PrototypeNorm(_BatchNorm):
         self.register_buffer("target_prototypes", None)
             
     def register_target_prototypes(self, targets):
+        # store input feature's corresponding ID labels
         self.target_prototypes = targets
         
     def reset_target_prototypes(self):
+        # clear ID labels
         self.target_prototypes = None
         
     def forward(self, input):

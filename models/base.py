@@ -216,11 +216,14 @@ class BaseRoIHeads(RoIHeads):
         if self.training:
             if self.oim_type == 'LOIM':
                 max_iou_list = []
+                # step1. compute IoU between all proposals and all ground-truth boxes
+                # step2. select the maximum ground-truth box for each proposal
+                # step3. (within the LOIM loss) filter out background proposals
                 for batch_index in range(len(proposals)):
                     box_p = proposals[batch_index]
                     box_t = targets[batch_index]['boxes']
-                    ious = box_ops.box_iou(box_p, box_t)
-                    ious_max = torch.max(ious, dim=1)[0]
+                    ious = box_ops.box_iou(box_p, box_t) 
+                    ious_max = torch.max(ious, dim=1)[0] 
                     max_iou_list.append(ious_max)
                 ious = torch.cat(max_iou_list, dim=0)
 
