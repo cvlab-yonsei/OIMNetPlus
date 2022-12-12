@@ -83,10 +83,17 @@ We provide pretrained weights and the correponding configs below.<br>
 | CUHK-SYSU | [model](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/ssm-loimeps0.1-normtypeprotonorm-augmentfalse.pth) <br> [config](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/ssm-loimeps0.1-normtypeprotonorm-augmentfalse.yaml) | [model](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/ssm-loimeps0.1-normtypeprotonorm-augmenttrue.pth) <br> [config](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/ssm-loimeps0.1-normtypeprotonorm-augmenttrue.yaml) |
 
 
-<!-- ## Bibtex
+## Citation
 ```
-@
-``` -->
+@inproceedings{lee2022oimnet++,
+  title={OIMNet++: Prototypical Normalization and Localization-Aware Learning for Person Search},
+  author={Lee, Sanghoon and Oh, Youngmin and Baek, Donghyeon and Lee, Junghyup and Ham, Bumsub},
+  booktitle={European Conference on Computer Vision},
+  pages={621--637},
+  year={2022},
+  organization={Springer}
+}
+```
 
 
 ## Credits
