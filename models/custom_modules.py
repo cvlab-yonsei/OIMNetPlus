@@ -16,6 +16,8 @@ class _PrototypeNorm(_BatchNorm):
         self.target_prototypes = None
         
     def forward(self, input):
+        if self.training: assert self.target_prototypes is not None, "Register targets during training with ProtoNorm"
+        else: assert self.target_prototypes is None, "Empty targets during testing with ProtoNorm"
         self._check_input_dim(input)
         ndim = input.ndim
         
