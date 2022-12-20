@@ -59,6 +59,9 @@ Your directories should look like:
 ```
 
 ## Training and Evaluation
+
+By running the commands below, evaluation results and training losses will be logged into a .txt file in the output directory.
+
 * OIMNet++<br> 
     `$ python train.py --cfg configs/prw.yaml`<br>
     `$ python train.py --cfg configs/ssm.yaml` 
@@ -71,7 +74,9 @@ Your directories should look like:
     `$ python train.py --cfg configs/prw.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM'`<br> 
     `$ python train.py --cfg configs/ssm.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM'` 
 
-By running the commands, evaluation results and training losses will be logged into a .txt file in the output directory.
+> We support training/evaluation using **single** GPU only. <br>
+> This is due to unsynchronized items across multiple GPUs in OIM loss (i.e., LUT and CQ) and ProtoNorm. <br>
+> (PRs are always welcomed!)
 
 ## Pretrained Models
 
