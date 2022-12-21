@@ -10,7 +10,7 @@ Our main contributions can be found in `models/custom_modules.py` and `losses/oi
 * GPU memory >= 22GB
 
 ## Features
-* Re-implementation of vanilla [OIMNet](https://openaccess.thecvf.com/content_cvpr_2017/papers/Xiao_Joint_Detection_and_CVPR_2017_paper.pdf) 
+* Re-implementation of vanilla [OIMNet](https://openaccess.thecvf.com/content_cvpr_2017/papers/Xiao_Joint_Detection_and_CVPR_2017_paper.pdf) in pure [PyTorch](https://pytorch.org/)
 * Using [automatic mixed precision](https://pytorch.org/docs/stable/notes/amp_examples.html) to train with larger batch size under limited GPU memory and accelerate training
 
 ## Getting Started
